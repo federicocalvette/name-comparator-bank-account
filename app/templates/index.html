@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+        <link rel="icon" href="{{ url_for('static', filename='img/favicon.png')}}">
+        <title>Web Transfer Logs</title>
+
+    </head>
+    <body>
+
+        <div class="navbar">
+            <div class="icon">
+                <img src="{{ url_for('static', filename='img/Prometeo-blanco.png')}}" width=150/>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">APIs</a></li>
+                    <li><a href="#">DOCUMENTATION</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="content">
+            {% for message in get_flashed_messages() %}
+                <div class="alert">{{ message }}</div>
+            {% endfor %}
+        </div>
+        
+        <div class="content">
+            <div class="main">
+                <div class="left">
+                    <form method="post">
+                        <h2 for="title">Solicita tu credito!</h2><br>
+                        
+                        <label for="">Nombre completo: </label><br>
+                        <input class="date" type="text" id="nombre_completo" name="nombre_completo" placeholder=" Jean Doe"><br><br>
+                        
+                        <label for="">Nro de cuenta: </label><br>
+                        <input class="date" type="text" id="numero_cuenta" name="numero_cuenta" placeholder=" 0123456789"><br><br>
+                        
+                        <label for="">Codigo del banco: </label><br>
+                        <input class="date" type="text" id="codigo_banco" name="codigo_banco" placeholder=" 001"><br><br>
+                        
+                        <label for="">Codigo del país: </label><br>
+                        <input class="date" type="text" id="codigo_pais" name="codigo_pais" placeholder=" UY"><br><br>
+
+
+                        <input class="submit" type="submit" value="Consultar">
+                    </form>
+                </div>
+                <div class="right">
+                    <img src="{{ url_for('static', filename='img/Pagos.png')}}" alt="Pagos cuenta a cuenta" title="Pagos cuenta a cuenta" width="400"/>
+                </div>
+            </div>
+        </div>
+        
+        <div class="content_table"> 
+            <br><br><br>
+            <h3>Resultado de la validación para el onboarding</h3>
+            
+
+            <p>{{msg}}</p>
+        </div>
+    </body>
+</html>

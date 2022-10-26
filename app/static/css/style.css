@@ -1,0 +1,173 @@
+@import url('http://fonts.cdnfonts.com/css/dm-sans');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.content{
+    width: 100%;
+}
+
+.main{
+    width: 100%;
+}
+
+.left{
+    width: 65%;
+    height: 450px; 
+    float: left;
+    display: grid; 
+
+}
+
+.right{
+    width: 30%;
+    height: 450px; 
+    float:right; 
+    padding-right: 5%;
+    padding-top: 15px;
+    display: grid; 
+
+}
+.content_table{
+    width: 100%;
+    margin-top: 100px;
+    display: grid; 
+    padding-top: 7em;
+    padding-left: 20px;
+}
+
+.alert {
+    padding: 20px;
+    color: #970020;
+    background-color: #ffd5de;
+}
+
+h2{
+    font-size: 35px;
+    margin-top: 30px;
+    letter-spacing: 2px;
+}
+
+h3{
+    padding-top: 25px;
+    font-size: 28px;
+    color: #495863;
+}
+
+h4{
+    font-size: 15px;
+    padding-left: 22px;
+    margin-top: 15px;
+    letter-spacing: 2px;
+}
+
+table {
+    width: 100%;
+    padding-top: 20px;
+    padding-right: 50px; /*random*/
+}
+
+th, td {
+    text-align: center;
+    vertical-align: top;
+    padding-bottom: 10px;
+    font-size: 11px;
+}
+
+th{
+    background: #495863;
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+}
+
+
+form{
+    padding: 10px;
+    padding-left: 20px;
+}
+form h2{
+    padding-left: 0;
+}
+label {
+    font-size: 20px;
+    color: #495863;
+}
+input{
+    width: 40%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+    line-height: 24px;
+}
+.submit{
+    border-color: #E6210A;
+    background-color: #E6210A;
+    color: #FCFEFF;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+
+/*Barra superior*/
+.navbar{
+    height: 75px;
+    margin: auto;
+    background-color: black;   
+}
+.icon{
+    width: 50%;
+    float: left;
+    height: 70px;
+    padding-top: 20px;
+    padding-left: 5%;
+}
+
+.menu{
+    float: left;
+    height: 70px;
+}
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+ul li a{
+    
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+ul li a:hover{
+    color: #ec1613;
+}
+
+.download{
+    width: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-color: #E6210A;
+    background-color: #E6210A;
+    color: #FCFEFF;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    text-decoration: none;
+    
+}
+
+p{
+    font-size: 20px;
+    margin-top: 30px;
+}
